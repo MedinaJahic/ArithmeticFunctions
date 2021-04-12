@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculating Program</title>
+</head>
+
+<body>
+
+    <script>
+
+        var a = prompt("Unesite vrijednost prvog broja");
+        var o = prompt("Unesite vrijednost artimetičke operacije");
+        var b = prompt("Unesite vrijednost drugog broja");
+
+        var a = parseInt(a);
+        var b = parseInt(b);
+
+        let mult = a * b;
+        let div = a / b;
+        let sub = a - b;
+        let add = a + b;
+
+
+        function math(a, b) {
+            if (o == "*") {
+                alert(mult);
+            } else if (o == "/") {
+                alert(div);
+            } else if (o == "-") {
+                alert(sub);
+            } else if (o == "+") {
+                alert(add);
+            } else {
+                alert("Incorecct Value")
+            }
+        }
+        math(a, b);
+
+    </script>
+
+</body>
+
+</html>
